@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+
+body {
+    background-color: black;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.div2 {
+    display: flex;
+    background: linear-gradient(to top, #000000 60%,rgb(39, 39, 39)); 
+    color: white;
+    width: 50%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    direction: rtl;
+}
+
+.div2 img {
+    width: 170px; 
+    align-self: flex-start; 
+    right: 5%;
+    top: 3%;
+    position: absolute;
+}
+
+.div2 h1:hover {
+    color: rgb(172, 128, 16);
+    transition: 0.3s;
+    font-size: 47px;
+}
+
+.div2 p {
+    font-family: "El Messiri", serif;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.first_button {
+    background: linear-gradient(to right, #652fc9 10%, #c94220 70%, #84630b); 
+    width: 200px;
+    height: 50px;
+    position: absolute;  
+    border-radius: 11px;
+    bottom: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.first_button:hover {
+    transition: 0.3s;
+    width: 207px;
+    height: 54px;
+    font-size: 21px;
+}
+
+.first_button a {
+    text-decoration: none; 
+    color: white;
+}
+
+.div2_ {
+    height: 100vh;
+    width: 50%;
+    background: linear-gradient(to top, #000000 60%,rgb(39, 39, 39));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2_ p { 
+    font-family: "Bebas Neue", serif; 
+    font-size: 120px; color: white; 
+    background: linear-gradient(45deg, #652fc9 10%, #c94220 70%, #84630b); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; }
+
+.main1 {
+    background: linear-gradient(to top, #000000 60%,rgb(53, 36, 13)); 
+    height: 100vh;
+    width: 100%;
+}
+
+.question2 {
+    color: white;
+    font-size: 55px;
+    margin-top: 5%;
+    text-align: left;
+    transition: 0.4s;
+}
+
+.question2:hover {
+    transition: 0.3s;
+    font-size: 55px;
+    color: rgb(174, 174, 174);
+}
+
+.main1_left_div {
+    display: flex;
+    position: relative;
+}
+
+.main1_left_div div {
+    width: 50%; 
+    display: flex; 
+    color: white; 
+    flex-direction: column;
+    position: relative
+}
+
+.main1_left_div div i {
+    align-self: center; 
+    justify-self: center; 
+    font-size: 200px; 
+    position: absolute; 
+    top: 40%;
+    background: linear-gradient(45deg, #652fc9 10%, #c94220 60%, #ba901c); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.main1_right_div {
+    align-items: center;
+}
+
+.main1_right_div p {
+    font-size: 18px;
+    font-family: "El Messiri", serif;
+    text-align: justify;
+    margin-top: 20%;
+    direction: rtl;
+    margin-right: 25px;
+    transition: 0.5s;
+    justify-self: center;
+}
+
+.main1_right_div p:hover {
+    color: rgb(174, 174, 174);
+    transition: 0.5s;
+}
+
+.second_button {
+    background: rgb(83, 62, 7);
+    width: 200px;
+    height: 50px; 
+    position: absolute;  
+    border-radius: 11px;
+    bottom: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.second_button a {
+    text-decoration: none; 
+    color: white;
+}
+
+.second_button:hover {
+    width: 205px;
+    height: 53px;
+    font-size: 21px;
+    transition: 0.2s;
+}
+
+.idea_pic img {
+    width: 100%;
+}
+
+.div3 {
+    display: flex;
+    position: relative;
+    background: linear-gradient(to right, #000000 10%, #1d1503 70%,rgb(53, 36, 13)); 
+    color: white;
+    width: 50%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;   
+}
+
+.div3 h2 {
+    align-self: flex-start;
+    margin-top: 7%;
+    font-size: 42px;
+    transition: 0.5s;
+}
+
+.div3 h2:hover {
+    color: rgb(186, 186, 186);
+    font-size: 42px;
+    transition: 0.5s;
+}
+
+.div3 p {
+    text-align: left;
+    margin-top: 60px;
+    position: absolute;
+    font-size: 19px;
+    font-family: "El Messiri", serif;
+    text-align: justify;
+    margin-right: 20px;
+    direction: rtl;
+}
+
+.Content {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #000000 70%, rgb(37, 25, 9)); 
+    justify-content: center;
+    align-items: center;
+}
+
+.Content h1{
+    color: white; 
+    font-size: 40px; 
+    align-self: flex-start; 
+    margin-top: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ContentDiv {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+    height: 400px;
+    gap: 50px;
+}
+
+.Content_div {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    border: 2px solid rgb(88, 66, 11);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.Content_div img {
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+}
+
+.Content_div:hover img {
+    transform: scale(110%);
+    transition: 0.7s;
+}
+
+.Content_div img::after {
+    content: "";
+    background-color: #000;
+    z-index: 100;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 25vh;
+    background-color: black;
+    width: 100%;
+}
+
+footer div:first-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 80%;
+    height: 50%;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+footer a:first-of-type i {
+    background: linear-gradient(45deg, #652fc9 10%, #c94220 70%, #84630b); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+footer p {
+    color: gray;
+    margin-top: 12%;
+    font-size: 15px;
+}
+
+@media (max-width: 576px) {
+
+    body {
+        width: 100%;
+    }
+
+    header li:first-of-type {
+        display: none;
+    }
+
+    .first_button {
+        width: 120px;
+        height: 40px;
+        bottom: -5%;
+    }
+
+    section div {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .div2 {
+        width: 100%;
+        height: 80vh;
+        font-size: 18px;
+        background: linear-gradient(to top, #000000 60%,rgb(33, 33, 33));
+        margin-bottom: 50px;
+    }
+
+    .div2 h1 {
+        top: 29%;
+        font-size: 30px;
+        display: none;
+    }
+
+    .div2 h1:hover {
+        font-size: 31px;
+    }
+
+    .div2 img {
+        width: 110px; 
+        justify-self: center;
+        top: -19%;
+        right: 35%;
+    }
+
+    .first_button {
+        width: 120px;
+        height: 40px;
+        font-size: 17px;
+    }
+    
+    .first_button:hover {
+        width: 120px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .div2_ {
+        width: 100%;
+        height: 380px;
+        background: linear-gradient(to bottom, #000000 60%,rgb(33, 33, 33));
+    }
+
+    .div2_ p {
+        font-size: 90px;
+        text-align: center;
+    }
+
+    .main1 {
+        height: 700px;
+        background: linear-gradient(to bottom, #000000 ,rgb(43, 28, 5) 70%, #000000);
+    }
+
+    .main1_left_div {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .main1_left_div div {
+        width: 100%;
+    }
+
+    .main1_left_div div i {
+        display: none;
+    }
+
+    .main1_left_div div b {
+        font-size: 27px;
+        text-align: center;
+    }
+
+    .main1_left_div div b:hover {
+        font-size: 28px;
+    }
+
+    .main1_right_div p {
+        margin-left: 6%;
+        font-size: 14px;
+    }
+
+    .first_button a {
+        font-size: 15px;
+    }
+
+    .div3 {
+        width: 100%;
+        background: linear-gradient(to bottom, #000000 10%, #1d1503 70%,rgb(53, 36, 13)); 
+    }
+
+    .div3 h2 {
+        font-size: 24px;
+        margin-top: -500px;
+        text-align: center;
+    }
+
+    .div3 h2:hover {
+        font-size: 25px;
+        margin-top: -460px;
+        text-align: center;
+    }
+
+    .div3 p {
+        margin: 20px;
+        font-size: 16px;
+    }
+
+    .second_button {
+        width: 120px;
+        height: 40px;
+        font-size: 13px;
+    }
+    
+    .second_button a {
+        text-decoration: none; 
+        color: white;
+    }
+    
+    .second_button:hover {
+        width: 125px;
+        height: 43px;
+        font-size: 14px;
+        transition: 0.2s;
+    }
+
+    .Content {
+        height: 1500px;
+        text-align: center;
+        background: linear-gradient(to top, #000000 10%, #1d1503 70%,rgb(53, 36, 13)); 
+    }
+
+    .ContentDiv {
+        display: flex;
+        flex-direction: column;
+        height: 1500px;
+    }
+
+    .Content_div {
+        width: 100%;
+        height: 350px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    footer div:first-of-type a {
+      text-align: center;  
+      font-size: 15px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .first_button {
+        margin-bottom: -30px;
+    }
+
+    header ul li {
+        font-size: 13px;
+    }
+}
+
+/* Thanks For your Reading to My Code Bro */
