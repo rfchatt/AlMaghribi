@@ -5,10 +5,40 @@ body {
     background-color: black;
 }
 
-header {
-    position: fixed;
+
+
+.navbar-logo {
+    height: 55px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
+.navbar {
+    min-height: 40px;
+}
+
+li a {
+    position: relative;
+    font-weight: 300;
+    text-decoration: none;
+    color: inherit;
+}
+
+li a::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    left: 0;
+    height: 4px;
+    bottom: 2px;
+    border-radius: 1rem;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to right, #ffd700, #b8860b);
+}
+
+li a:hover::before {
     width: 100%;
-    z-index: 1000;
 }
 
 .div2 {
@@ -310,15 +340,21 @@ footer p {
     font-size: 15px;
 }
 
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 50px; /* Smaller logo for mobile */
+    }
+}
+
 @media (max-width: 576px) {
 
     body {
         width: 100%;
     }
 
-    header li:first-of-type {
+    /* header li:first-of-type {
         display: none;
-    }
+    } */
 
     .first_button {
         width: 120px;
@@ -372,6 +408,7 @@ footer p {
         width: 100%;
         height: 380px;
         background: linear-gradient(to bottom, #000000 60%,rgb(33, 33, 33));
+        margin-top: 55px;
     }
 
     .div2_ p {
@@ -497,5 +534,3 @@ footer p {
         font-size: 13px;
     }
 }
-
-/* Thanks For your Reading to My Code Bro */
