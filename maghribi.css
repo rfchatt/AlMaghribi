@@ -413,6 +413,7 @@ footer p {
         justify-content: center;
         position: relative;
         flex-direction: column;
+        height: 100%;
     }
 
     .main1_left_div div {
@@ -534,6 +535,18 @@ footer p {
         font-size: 10px;
     }
 
+}
+
+@media (max-width: 365px) {
+
+    .div3 {
+        height: 510px;
+    }
+
+    .main1 {
+        height: 1100px;
+    }
+    
 }
 
 @media (max-width: 320px) {
