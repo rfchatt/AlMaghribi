@@ -24,24 +24,44 @@
 <body>
 
     <!---------Top's header of the Website---------->
-    <header class="bg-dark" >
-        <ul class="nav nav-pills d-flex justify-content-center m-1">
-            <li class="nav-item">
-              <a class="nav-link active bg-light text-dark" aria-current="page" href="#Our_Goal">maghribi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#Objective">Objective</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#Idea">Idea</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#Content">Content</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="#footer">Contact</a>
-            </li>
-        </ul>
+    <header class="bg-dark">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="logotrans.png" alt="logo" class="navbar-logo" />
+          </a>
+          <!-- Toggler button for mobile -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mynavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar links (collapsible section) -->
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav mx-auto gap-5 fs-5 text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#Objective" style="display: block"
+                  >Objective</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Idea">Idea</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Content">Content</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!--The First section-->
@@ -169,5 +189,5 @@
     </footer>
 
 </body>
-    <!-- Thanks for Your reading to my code bro -->
+    <!-- Thanks for Your reading to my code -->
 </html>
