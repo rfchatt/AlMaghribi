@@ -7,6 +7,40 @@ body {
     background-color: black;
 }
 
+.navbar-logo {
+    height: 35px;
+    width: auto;
+    margin-left: 7px;
+}
+
+
+.navbar {
+    min-height: 40px;
+}
+
+li a {
+    position: relative;
+    font-weight: 300;
+    text-decoration: none;
+    color: inherit;
+}
+
+li a::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    left: 0;
+    height: 3px;
+    bottom: 2px;
+    border-radius: 1rem;
+    transition: 0.5s ease-in-out;
+    background: linear-gradient(to right, #ffd700, #b8860b);
+}
+
+li a:hover::before {
+    width: 100%;
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -320,6 +354,12 @@ footer p {
     font-size: 0.625rem;
 }
 
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 50px;
+    }
+}
+
 @media (max-width: 576px) {
 
     header {
@@ -333,10 +373,6 @@ footer p {
         width: 100%;
         justify-content: center;
         --bs-gutter-x:0;
-    }
-
-    header li:first-of-type {
-        display: none;
     }
 
     .first_button {
@@ -567,4 +603,4 @@ footer p {
     }
 }
 
-/* Thanks For your Reading to My Code Bro */
+/* Thanks For your Reading to My Code */
