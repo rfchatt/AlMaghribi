@@ -1,64 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>maghribi</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Islamic content platform featuring Moroccan scholars and global Islamic figures"
+    />
+    <meta
+      name="keywords"
+      content="Islam, Moroccan scholars, Islamic knowledge, Sheikh Said Kamali"
+    />
+    <title>Al-Maghribi</title>
 
-    <!--Link of JavaScript File of Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-    <!--Link of CSS File of Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
-    <!--Link of Other CSS Styles-->
-    <link rel="stylesheet" href="maghribi.css">
-    
-    <!--Link of icons of Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-    <!--Link of Browser's window icon-->
-    <link rel="icon" type="png" href="browser_icon.png">
+    <!-- Font Awesome for additional icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="pictures/browser_icon.png" />
   </head>
 
-<body>
-
-    <!---------Top's header of the Website---------->
-    <header class="bg-dark">
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <!-- Logo -->
-          <a class="navbar-brand" href="#">
-            <img src="logotrans.png" alt="logo" class="navbar-logo" />
+  <body>
+    <!-- Compact Black Header -->
+    <header class="bg-black">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top py-2">
+        <div class="container">
+          <!-- Compact Logo -->
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href="#"
+            style="height: 30px"
+          >
+            <span
+              class="d-none d-sm-inline fs-5"
+              style="font-family: 'El Messiri', sans-serif"
+              >المغربي</span
+            >
           </a>
-          <!-- Toggler button for mobile -->
+
+          <!-- Mobile Toggle Button -->
           <button
-            class="navbar-toggler"
+            class="navbar-toggler p-1"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#mynavbar"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <!-- Navbar links (collapsible section) -->
-          <div class="collapse navbar-collapse" id="mynavbar">
-            <ul class="navbar-nav mx-auto gap-5 fs-5 text-center">
-              <li class="nav-item">
-                <a class="nav-link" href="#Objective" style="display: block"
-                  >Objective</a
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center">
+              <li class="nav-item mx-1">
+                <a
+                  class="nav-link position-relative px-2 py-1"
+                  href="#Objective"
                 >
+                  <i class="fas fa-bullseye me-1"></i> Objective
+                </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Idea">Idea</a>
+              <li class="nav-item mx-1">
+                <a class="nav-link position-relative px-2 py-1" href="#Idea">
+                  <i class="fas fa-lightbulb me-1"></i> Idea
+                </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Content">Content</a>
+              <li class="nav-item mx-1">
+                <a class="nav-link position-relative px-2 py-1" href="#Content">
+                  <i class="fas fa-photo-video me-1"></i> Content
+                </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#footer">Contact</a>
+              <li class="nav-item mx-1">
+                <a class="nav-link position-relative px-2 py-1" href="#contact">
+                  <i class="fas fa-envelope me-1"></i> Contact
+                </a>
               </li>
             </ul>
+
+            <!-- Social Media Icons -->
+            <div class="d-flex ms-lg-2 mt-2 mt-lg-0 justify-content-center">
+              <a
+                href="https://www.instagram.com/1maghribi"
+                class="text-decoration-none mx-1"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i
+                  class="fab fa-instagram text-danger"
+                  style="font-size: 1.1rem"
+                ></i>
+              </a>
+              <a
+                href="tel:+212772282545"
+                class="text-decoration-none mx-1"
+                target="_blank"
+                aria-label="WhatsApp"
+              >
+                <i
+                  class="fab fa-whatsapp text-success"
+                  style="font-size: 1.1rem"
+                ></i>
+              </a>
+            </div>
           </div>
         </div>
       </nav>
@@ -66,128 +125,311 @@
 
     <!--The First section-->
     <section id="Our_Goal" class="section1">
-      <div style="display: flex;">
-
-        <!----- Right-Picture side of the Idea Section ------->
+      <div>
+        <!-- Right-Picture side (50% width) -->
         <div class="idea_pic">
-          <img src="main_pic1.png" alt="Image of maghribi">
+          <img src="pictures/main_pic1.png" alt="Image of maghribi" />
         </div>
 
-        <!----- Left-Black side of the Idea Section ------->
+        <!-- Left-Content side (50% width) -->
         <div class="div3">
-          <h2 class="mx-4" style="margin-top: 90px;">بسم الله الرحمن الرحيم</h2>
+          <h2>بسم الله الرحمن الرحيم</h2>
           <p>
-            يسعدنا أن نقدم لكم حساب المغربي 
-             الذي يهدف إلى مشاركة ثروة من المعرفة الإسلامية الملهمة. يركز الحساب بشكل رئيسي على مقاطع مميزة من علماء مغاربة
-             مشهورين، مثل الشيخ سعيد الكملي حفظه الله، إضافة إلى شخصيات إسلامية محترمة من جميع أنحاء العالم. هذه المقاطع تعكس
-             القيم الإسلامية العميقة وتهدف إلى توعية المجتمع وتثقيفه. بالإضافة إلى ذلك، يشارك الحساب خطبًا ودروسًا وخطابات دينية
-             تتعمق في مبادئ وممارسات الإسلام، مما يوفر للمتابعين رؤى قيمة حول إيمانهم. من خلال هذه المنشورات المتنوعة والمثرية.
+            يسعدنا أن نقدم لكم حساب المغربي الذي يهدف إلى مشاركة ثروة من المعرفة
+            الإسلامية الملهمة. يركز الحساب بشكل رئيسي على مقاطع مميزة من علماء
+            مغاربة مشهورين، مثل الشيخ سعيد الكملي حفظه الله، إضافة إلى شخصيات
+            إسلامية محترمة من جميع أنحاء العالم. هذه المقاطع تعكس القيم
+            الإسلامية العميقة وتهدف إلى توعية المجتمع وتثقيفه. بالإضافة إلى ذلك،
+            يشارك الحساب خطبًا ودروسًا وخطابات دينية تتعمق في مبادئ وممارسات
+            الإسلام، مما يوفر للمتابعين رؤى قيمة حول إيمانهم. من خلال هذه
+            المنشورات المتنوعة والمثرية.
           </p>
           <!-- Contact Us Button -->
           <div class="second_button">
             <a href="tel:+212772282545" target="_blank"><b>Contact US</b></a>
           </div>
         </div>
-
       </div>
     </section>
 
     <!---------The second Section---------->
     <section class="row" id="Objective">
-        
-        <div class="div2_">
-          <p>+50K Follower</p>
+      <div class="div2_">
+        <p>+ 50 000 Follower</p>
+      </div>
+
+      <div class="div2" style="position: relative">
+        <img src="pictures/logo_png.png" alt="logo_png" class="mt-4" />
+
+        <p class="mx-5">
+          تتمثل مهمة منصتنا في الارتقاء بمجتمعنا الإسلامي وإلهامه من خلال توفير
+          إمكانية الوصول إلى مقاطع فيديو عالية الجودة ومقاطع بودكاست. ثم من خلال
+          المحتوى الجذاب والمثير للتفكير، كما و نهدف إلى تعزيز فهم أعمق للمبادئ
+          الإسلامية، وتعزيز النمو الروحي، وتشجيع التغيير الإيجابي. من خلال ربط
+          المشاهدين بالعلماء المطلعين والمتحدثين المؤثرين، هكذا يصبح موقعنا ينير
+          الطريق إلى حياة أكثر ثراءً وإشباعًا تسترشد بتعاليم الإسلام. معًا، نسعى
+          جاهدين لإنشاء مجتمع نابض بالحياة حيث يزدهر الإيمان والمعرفة والرحمة.
+        </p>
+        <div class="first_button">
+          <a
+            href="https://www.instagram.com/1maghribi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            >View Instagram</a
+          >
         </div>
-
-        <div class="div2" style="position: relative;">
-          <img src="logo_png.png" alt="logo_png" class="mt-4">
-
-          <p class="mx-5">
-            تتمثل مهمة منصتنا في الارتقاء بمجتمعنا الإسلامي وإلهامه من خلال توفير إمكانية الوصول إلى مقاطع فيديو عالية الجودة ومقاطع بودكاست. ثم من خلال المحتوى الجذاب والمثير للتفكير، كما و نهدف إلى تعزيز فهم أعمق للمبادئ الإسلامية، وتعزيز النمو الروحي، وتشجيع التغيير الإيجابي. من خلال ربط المشاهدين بالعلماء المطلعين والمتحدثين المؤثرين، هكذا يصبح موقعنا ينير الطريق إلى حياة أكثر ثراءً وإشباعًا تسترشد بتعاليم الإسلام. معًا، نسعى جاهدين لإنشاء مجتمع نابض بالحياة حيث يزدهر الإيمان والمعرفة والرحمة.
-          </p>
-          <div class="first_button">
-            <a href="https://www.instagram.com/1maghribi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">View Instagram</a>
-          </div>
-
-        </div>
+      </div>
     </section>
 
     <!---------The first main---------->
     <main class="main1" id="Idea">
-      <div class="main1_left_div">
-
-        <!----- Title of the main ------->
-        <div>
-          <b class="question2">What is the purpose of our content ?</b>
-          <i class="bi bi-instagram mt-5"></i>
-        </div>
-
-        <!----- Paragraphe of main Title ------->
-        <div class="main1_right_div">
           <p>
-            في العصر الرقمي الحالي، يمكن أن يتردد صدى اندماج المبادئ الإسلامية الخالدة
-            مع تقديم المحتوى الحديث بشكل عميق بين الشباب. من خلال إنشاء منشورات جذابة بصريًا وجذابة على
-            وسائل التواصل الاجتماعي، يمكننا إحياء جوهر التعاليم الإسلامية. يمكن لمقاطع الفيديو القصيرة على 
-            Instagram التي تحتوي على قصص قوية وأحاديث ونصائح عملية
-            للحياة متجذرة في الإيمان أن تأسر الجيل الأصغر سنًا. يساعد استخدام الرسومات الإبداعية والسيناريوهات ذات الصلة في جعل الرسالة أكثر ارتباطًا وتذكرًا. هدفنا
-            النهائي هو تعزيز الشعور القوي بالإيمان، وتشجيع الشباب على تجسيد قيم الرحمة والنزاهة
-            واللطف في تفاعلاتهم اليومية. تصبح منصات التواصل الاجتماعي قماشنا الحديث لرسم
-            صورة نابضة بالحياة للقيم الإسلامية التي تلهم الشباب وتوجههم نحو حياة إيجابية ومُرضية.
-            <br><br><br>
-            بالإضافة إلى ذلك، يمكننا استغلال الجلسات التفاعلية مثل الأسئلة والأجوبة
-             الحية، والندوات عبر الإنترنت، والتحديات الجذابة للمشاركة الفعالة للشباب. هذه الطريقة لا تجعل التعلم
-             عن الإيمان أكثر شمولاً فحسب، بل تزرع أيضًا شعورًا بالانتماء والتآزر. من خلال معالجة القضايا المعاصرة
-             وتقديم وجهات نظر إسلامية حولها، يمكننا مساعدة الشباب على التنقل في حياتهم اليومية بثقة وصمود.
+            في العصر الرقمي الحالي، يمكن أن يتردد صدى اندماج المبادئ الإسلامية
+            الخالدة مع تقديم المحتوى الحديث بشكل عميق بين الشباب. من خلال إنشاء
+            منشورات جذابة بصريًا وجذابة على وسائل التواصل الاجتماعي، يمكننا
+            إحياء جوهر التعاليم الإسلامية. يمكن لمقاطع الفيديو القصيرة على
+            Instagram التي تحتوي على قصص قوية وأحاديث ونصائح عملية للحياة متجذرة
+            في الإيمان أن تأسر الجيل الأصغر سنًا. يساعد استخدام الرسومات
+            الإبداعية والسيناريوهات ذات الصلة في جعل الرسالة أكثر ارتباطًا
+            وتذكرًا. هدفنا النهائي هو تعزيز الشعور القوي بالإيمان، وتشجيع الشباب
+            على تجسيد قيم الرحمة والنزاهة واللطف في تفاعلاتهم اليومية. تصبح
+            منصات التواصل الاجتماعي قماشنا الحديث لرسم صورة نابضة بالحياة للقيم
+            الإسلامية التي تلهم الشباب وتوجههم نحو حياة إيجابية ومُرضية.
+            <br />
+            بالإضافة إلى ذلك، يمكننا استغلال الجلسات التفاعلية مثل الأسئلة
+            والأجوبة الحية، والندوات عبر الإنترنت، والتحديات الجذابة للمشاركة
+            الفعالة للشباب. هذه الطريقة لا تجعل التعلم عن الإيمان أكثر شمولاً
+            فحسب، بل تزرع أيضًا شعورًا بالانتماء والتآزر. من خلال معالجة القضايا
+            المعاصرة وتقديم وجهات نظر إسلامية حولها، يمكننا مساعدة الشباب على
+            التنقل في حياتهم اليومية بثقة وصمود.
           </p>
-        </div>
-
-      </div>
     </main>
 
-    <!--The second main-->
-    <main id="Content" class="Content">
+    <!-- ----------------- -->
 
-      <h1><b>The content we provide</b></h1>
-      <div class="ContentDiv">
-        <div class="Content_div">
-          <a href="https://www.instagram.com/1maghribi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-            <img src="content1.png" alt="Content Image">
-          </a>
+        <!-- Gallery Section -->
+    <section class="gallery-section">
+        <h2 class="section-title">شخصيات</h2>
+        <p class="section-subtitle">
+            °°°°°°°°°°°°°°°°°°°°°°°°°
+        </p>
+        
+        <!-- Slideshow Container -->
+        <div class="slideshow-container">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <img src="https://i.ytimg.com/vi/XDwBkrGJNJ4/maxresdefault.jpg" alt="Bishan Kito 1">
+                <div class="slide-caption">Cheikh Said El Kamali</div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="https://howiyapress.com/wp-content/uploads/2024/04/AMRI1.png" alt="Bishan Kito 2">
+                <div class="slide-caption">Dr Yassine El Amri</div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="pictures/mehdi_chaoui.png" alt="Bishan Kito 3">
+                <div class="slide-caption">Mehdi Chaoui</div>
+            </div>
+            
+            <!-- Slide 4 -->
+            <div class="slide">
+                <img src="pictures/abou_saad.png" alt="Bishan Kito 4">
+                <div class="slide-caption">Dr Moustapha Abou-Saad</div>
+            </div>
         </div>
-        <div class="Content_div">
-          <a href="https://www.instagram.com/1maghribi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-            <img src="content2.png" alt="">
-          </a>
-        </div>
-        <div class="Content_div">
-          <a href="https://www.instagram.com/1maghribi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-            <img src="content33.png" alt="">
-          </a>
-        </div>
+    </section>
 
-      </div>
-    </main>
+    <!-- ----------------- -->
+
+        <!-- Contact Form Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2 class="text-gold mb-3" style="color: #cf8e1d;">تواصل معنا</h2>
+                        <p class="lead">شاركنا استفساراتك أو اقتراحاتك وسنكون سعداء بالرد عليك</p>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">الاسم الكامل</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">البريد الإلكتروني</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">الموضوع</label>
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="message" class="form-label">الرسالة</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="subscribe">
+                                <label class="form-check-label" for="subscribe">أرغب في الاشتراك بالنشرة البريدية</label>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">إرسال الرسالة</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!--Web Site Footer-->
-    <footer id="footer">
-      
-      <div>
-        <a href="https://www.instagram.com/1maghribi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" style="color: rgb(255, 255, 255);">
-          <i class="bi bi-instagram" style="color: rgb(148, 106, 8);"></i>
-          Instagram
-        </a>
-        <img src="logo_png.png" style="width: 120px" alt="">
-        <a href="tel:+212772282545" target="_blank">
-          <i class="bi bi-whatsapp text-success"></i>
-          WhatsApp
-        </a>
-      </div>
-      <div>
-        <p>All rights reserved to Al Maghribi official</p>
-      </div>
+    <!-- Professional Islamic Footer -->
+    <footer id="footer" class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center">
+            <!-- Logo and Tagline -->
+            <div class="mb-4">
+              <img
+                src="pictures/logo_png.png"
+                alt="Al-Maghribi Logo"
+                class="mb-3"
+                style="width: 100px"
+              />
+              <p
+                class="mb-0 fs-5"
+                style="font-family: 'El Messiri', sans-serif"
+              >
+                ننشر العلم الشرعي من مصادر موثوقة
+              </p>
+              <p class="text-muted mt-2">
+                Spreading authentic Islamic knowledge
+              </p>
+            </div>
 
+            <!-- Main Footer Columns -->
+            <div class="row g-4 text-start">
+              <!-- About Section -->
+              <div class="col-md-4">
+                <h5 class="mb-3" style="font-family: 'El Messiri', sans-serif">
+                  نبذة عنا
+                </h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2">هدفنا غير ربحي</li>
+                  <li class="mb-2">منصة إسلامية</li>
+                  <li>من مصادر موثوقة</li>
+                </ul>
+              </div>
+
+              <!-- Contact Section -->
+              <div class="col-md-4">
+                <h5 class="mb-3" style="font-family: 'El Messiri', sans-serif">
+                  وسائل التواصل
+                </h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a
+                      href="tel:+21277220556"
+                      class="text-white text-decoration-none hover-gold"
+                    >
+                      <i class="fas fa-phone-alt me-2"></i> +212 772 28 25 45
+                    </a>
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      href="mailto:chattabdrrafie@gmail.com"
+                      class="text-white text-decoration-none hover-gold"
+                    >
+                      <i class="fas fa-envelope me-2"></i> chattabdrrafie@gmail.com
+                    </a>
+                  </li>
+                  <li>
+              <div class="input-group mt-3 w-75" style="height: 37px;">
+                <input 
+                  type="email" 
+                  class="form-control bg-secondary border-dark h-100" 
+                  placeholder="Subscribe to our newsletter"
+                  style="border-radius: 0.25rem 0 0 0.25rem;"
+                >
+                <button 
+                  class="btn btn-warning h-100 px-3" 
+                  type="button"
+                  style="border-radius: 0 0.25rem 0.25rem 0;"
+                >
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Legal Links -->
+              <div class="col-md-4">
+                <h5 class="mb-3">Legal</h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <a
+                      href="conditions.htm" target="_blank"
+                      class="text-white text-decoration-none hover-gold"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      href="conditions.htm" target="_blank"
+                      class="text-white text-decoration-none hover-gold"
+                      >Terms of Service</a
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <a
+                      href="#"
+                      class="text-white text-decoration-none hover-gold"
+                      >Developped By Abderrafie Chate</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Divider -->
+            <hr class="my-4" style="border-color: rgba(255, 255, 255, 0.966)" />
+
+            <!-- Copyright -->
+            <div class="row">
+              <div class="col-md-6 text-md-start mb-3 mb-md-0">
+                <p class="mb-0 small ">
+                  &copy; <span id="year"></span> All rights reserved | Al Maghribi
+                </p>
+              </div>
+              <div class="col-md-6 text-md-end">
+                <a href="#" class="btn btn-sm btn-outline-light me-2"
+                  >Get Started</a
+                >
+                <span class="small text-muted">Windows compatible</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
-</body>
-    <!-- Thanks for Your reading to my code -->
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+  <!-- Thanks for Your reading to my code -->
 </html>
