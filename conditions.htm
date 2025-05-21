@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Policies | Al-Maghribi</title>
+        <link rel="icon" type="image/png" href="pictures/browser_icon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+        :root {
+            --islamic-green: rgb(10, 68, 10);
+            --gold: #d4af37;
+            --dark-bg: #1a1a1a;
+            --text-color: #333;
+            --light-bg: #f5f5f5;
+        }
+        
+        body {
+            font-family: 'El Messiri', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            line-height: 1.8;
+            background-color:rgb(24, 24, 24);
+        }
+        
+        .legal-header {
+            background: linear-gradient(135deg, var(--dark-bg), var(--islamic-green));
+            color: white;
+            padding: 80px 0;
+            margin-bottom: 40px;
+            text-align: center;
+            font-family: 'El Messiri', sans-serif;
+            border-bottom: 5px solid var(--gold);
+        }
+        
+        .legal-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .legal-card {
+            background-color: black;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 40px;
+            margin-bottom: 40px;
+            border-top: 3px solid var(--gold);
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+        
+        h2 {
+            color: white;
+            margin: 40px 0 20px;
+            font-size: 2rem;
+            border-bottom: 2px solid var(--light-bg);
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: var(--gold);
+            margin: 30px 0 15px;
+            font-size: 1.5rem;
+        }
+        
+        p, li {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        ul {
+            padding-left: 30px;
+        }
+        
+        
+        .last-updated {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 30px;
+            text-align: right;
+        }
+        
+        .nav-tabs {
+            border-bottom: 2px solid #dee2e6;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+        
+        .nav-tabs .nav-link {
+            color: var(--dark-bg);
+            font-weight: 600;
+            border: none;
+            padding: 15px 30px;
+            margin: 0 5px;
+            border-radius: 5px 5px 0 0;
+        }
+        
+        .nav-tabs .nav-link.active {
+            color: white;
+            background-color: var(--islamic-green);
+            border-bottom: 3px solid var(--gold);
+        }
+        
+        .footer {
+            background-color: var(--dark-bg);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 50px;
+            border-top: 3px solid var(--gold);
+        }
+        
+        .arabic-text {
+            font-family: 'El Messiri', sans-serif;
+            direction: rtl;
+            text-align: right;
+        }
+        
+        @media (max-width: 768px) {
+            .legal-header {
+                padding: 50px 0;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .legal-card {
+                padding: 25px;
+            }
+            
+            .nav-tabs .nav-link {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="legal-header">
+        <div class="container">
+            <h1>السياسات القانونية</h1>
+            <p class="lead arabic-text">سياسة الخصوصية وشروط الاستخدام</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="legal-container">
+        <!-- Navigation Tabs -->
+        <ul class="nav nav-tabs" id="legalTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="privacy-tab" data-bs-toggle="tab" data-bs-target="#privacy" type="button" role="tab" style="color: white;">سياسة الخصوصية</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="terms-tab" data-bs-toggle="tab" data-bs-target="#terms" type="button" role="tab" style="color: white;">شروط الاستخدام</button>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="legalTabsContent">
+            <!-- Privacy Policy -->
+            <div class="tab-pane fade show active" id="privacy" role="tabpanel">
+                <div class="legal-card">
+                    <h2 class="arabic-text">سياسة الخصوصية</h2>
+                    <p class="last-updated arabic-text">آخر تحديث: ١ محرم ١٤٤٥</p>
+                    
+                    <p class="arabic-text">نحن في منصة المغربي نقدّر خصوصيتكم ونلتزم بحماية بياناتكم الشخصية. توضح هذه السياسة كيفية جمعنا واستخدامنا وحماية معلوماتكم.</p>
+                    
+                    <h3 class="arabic-text">١. المعلومات التي نجمعها</h3>
+                    <p class="arabic-text">قد نجمع الأنواع التالية من المعلومات:</p>
+                    <ul class="arabic-text">
+                        <li>معلومات التسجيل (الاسم، البريد الإلكتروني، رقم الهاتف)</li>
+                        <li>بيانات مثل تفاعلكم مع المحتوى</li>
+                        <li>آراؤكم واستفساراتكم عبر وسائل التواصل</li>
+                    </ul>
+                    
+                    <h3 class="arabic-text">٢. كيفية استخدام المعلومات</h3>
+                    <p class="arabic-text">نستخدم بياناتكم للأغراض التالية:</p>
+                    <ul class="arabic-text">
+                        <li>توفير المحتوى الإسلامي المطلوب</li>
+                        <li>تحسين تجربة المستخدم وتطوير المنصة</li>
+                        <li>الرد على استفساراتكم وطلباتكم</li>
+                        <li>حماية المنصة من الاستخدام غير المصرح به</li>
+                    </ul>
+                    
+                    <h3 class="arabic-text">٤. مشاركة المعلومات</h3>
+                    <p class="arabic-text">لا نبيع أو نؤجر بياناتكم الشخصية لأطراف ثالثة.</p>
+                </div>
+            </div>
+            
+            <!-- Terms of Service -->
+            <div class="tab-pane fade" id="terms" role="tabpanel">
+                <div class="legal-card">
+                    <h2 class="arabic-text">شروط الاستخدام</h2>
+                    <p class="last-updated arabic-text">آخر تحديث: ١ محرم ١٤٤٥</p>
+                    
+                    <p class="arabic-text">باستخدامكم منصة المغربي، فإنكم توافقون على الالتزام بهذه الشروط والأحكام.</p>
+                    
+                    <h3 class="arabic-text">١. الالتزامات العامة</h3>
+                    <ul class="arabic-text">
+                        <li>الالتزام بأحكام الشريعة الإسلامية في جميع التفاعلات</li>
+                        <li>عدم نشر محتوى مخالف للعقيدة الإسلامية</li>
+                        <li>الحفاظ على أدب الحوار والمناقشة</li>
+                        <li>عدم استخدام المنصة لأغراض تجارية دون إذن</li>
+                    </ul>
+                    
+                    <h3 class="arabic-text">٢. المحتوى المقدم</h3>
+                    <p class="arabic-text">جميع المواد العلمية المقدمة:</p>
+                    <ul class="arabic-text">
+                        <li>مستلة من مصادر موثوقة ومعتمدة</li>
+                        <li>يتم مراجعتها من قبل متخصصين</li>
+                        <li>لا يجوز نسخها أو توزيعها دون إذن</li>
+                    </ul>
+                    
+                    <h3 class="arabic-text">٣. حقوق الملكية</h3>
+                    <p class="arabic-text">جميع حقوق النشر والملكية الفكرية للمحتوى تعود للمنصة، مع الاحتفاظ بحقوق العلماء والمؤلفين الأصليين.</p>
+                    
+                    <h3 class="arabic-text">٤. إيقاف الحساب</h3>
+                    <p class="arabic-text">يحق للإدارة إيقاف أي حساب في حال:</p>
+                    <ul class="arabic-text">
+                        <li>خرق شروط الاستخدام</li>
+                        <li>إساءة استخدام الخدمة</li>
+                        <li>التصرف بما يخالف القيم الإسلامية</li>
+                    </ul>
+                    
+                    <h3 class="arabic-text">٥. التعديلات</h3>
+                    <p class="arabic-text">نحتفظ بحق تعديل هذه الشروط عند الحاجة، وسيتم إعلامكم بأي تغييرات جوهرية.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <img src="pictures/logo_png.png" alt="Al-Maghribi Logo" style="height: 50px; margin-bottom: 20px; filter: brightness(0) invert(1);">
+            <p class="arabic-text">جميع الحقوق محفوظة لمنصة المغربي © ١٤٤٥</p>
+            <div class="mt-4">
+                <a href="tel:+212772282545" class="text-white mx-3"><i class="fas fa-phone"></i> +212 772 28 25 45</a>
+                <a href="mailto:chattabdrrafie@gmail.com" class="text-white mx-3"><i class="fas fa-envelope"></i> chattabdrrafie@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
